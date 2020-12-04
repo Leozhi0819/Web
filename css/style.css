@@ -364,9 +364,6 @@ a {
     margin: 0 auto;
 }
 
-.btn_cell {
-}
-
 .btn {
     position: relative;
     font-size: 16px;
@@ -416,6 +413,7 @@ a {
 
 .btn span {
     position: relative;
+    color: #ffffff;
 }
 
 /* 园区选择 */
@@ -564,11 +562,6 @@ a {
     right: 0;
     margin: 0 auto;
     bottom: -.75rem;
-}
-
-.front .inner span {
-    color: rgba(255,255,255,0.7);
-    font-weight: 300;
 }
 
 @media screen and (max-width: 72rem) {
