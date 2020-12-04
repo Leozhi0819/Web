@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XX度假区官方网站</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            let $navCheckbox = $(".nav_cb");
+            let $navContent = $(".nav_content");
+            let $navItems = $(".nav_items");
+            let $navItem = $(".nav_item");
+            let $carousel = $(".carousel");
+            let $carousel_content = $(".carousel_content li, .carousel_content img");
+            let originWidth = $navContent.width();
+            let windowWidth = ($(window).width());
+            let width;
+            // 设置CheckBox为未选中状态，解决页面返回时CheckBox处于选中状态的问题
+            $navCheckbox.prop("checked", false);
+            // 页面大小更改时，主页宽度
+            if (windowWidth >= 1152) {
+                width = windowWidth * 0.6;
+            } else {
+                width = windowWidth * 0.8;
+            }
+            $carousel.css("height", windowWidth / 3);
+            $carousel_content.css("width", windowWidth);
+            $carousel_content.css("height", windowWidth / 3);
+            $navItems.css("width", width);
+            $navItem.css("width", (width - 80) / 6);
+            $navCheckbox.click(function(){
+                if ($(".nav_cb").prop("checked")) {
+                    expandNav(600);
+                } else {
+                    shrinkNav(600);
+                }
+            });
+            $(window).resize(function () {
+                windowWidth = ($(window).width());
+                $carousel.css("height", windowWidth / 3);
+                $carousel_content.css("width", windowWidth);
+                $carousel_content.css("height", windowWidth / 3);
+                $navItems.css("width", width);
+                $navItem.css("width", (width - 110) / 6);
+                if ($(".nav_cb").prop("checked")) {
+                    alert("test");
+                    expandNav(0);
+                }
+            })
+            // 展开导航栏
+            let expandNav = function (time) {
+                $(".nav_content").css("width", originWidth);
+                setTimeout(function () {
+                    $navContent.css("transition", "width " + time +"ms linear", );
+                    $navContent.css("width", width);
+                })
+            }
+            // 收缩导航栏
+            let shrinkNav = function (time) {
+                setTimeout(function () {
+                    $navContent.css("transition", "width " + time +"ms linear");
+                    $navContent.css("width", originWidth);
+                })
+            }
+        });
+    </script>
 </head>
 <body>
 <!-- 导航条 -->
@@ -14,7 +75,7 @@
     <div class="nav_content">
         <ul class="nav_items">
             <li class="nav_item"><span class="nav_item_text"> 首页 </span></li>
-            <li class="nav_item"><span class="nav_item_text"> 度假园区 </span></li>
+            <li class="nav_item"><a href="holiday_park/holiday_park.html"><span class="nav_item_text"> 度假园区 </span></a></li>
             <li class="nav_item"><span class="nav_item_text"> 预订门票 </span></li>
             <li class="nav_item"><span class="nav_item_text"> 酒店预订 </span></li>
             <li class="nav_item"><span class="nav_item_text"> 游玩指南 </span></li>
@@ -23,28 +84,239 @@
     </div>
     <label class="nav_btn" for="menu_cb"></label>
 </nav>
-
-<script type="text/javascript">
-    const width = window.screen.width;
-    const nav = document.getElementsByClassName('nav_content')[0];
-
-
-    function $(document) {
-        
-    }
-
-    $(document).ready(function () {
-        $('.nav_cb').click(function () {
-            $('.nav_item').css('color', 'red');
-            if ($('.nav_cb').is(':checked')) {
-
-            }
-        }, function () {
-            $('.nav_item').css('color', 'blue');
-        })
-
-    });
-
-</script>
+<!-- Banner -->
+<div class="banner">
+    <div class="banner_content">
+        <div class="carousel">
+            <ul class="carousel_content">
+                <li><img src="img/banner1.jpg" alt=""></li>
+                <li><img src="img/banner2.jpg" alt=""></li>
+                <li><img src="img/banner3.jpg" alt=""></li>
+            </ul>
+            <ul class="carousel_index"></ul>
+            <div class="carousel_prev"><img src="img/left1.png" alt=""></div>
+            <div class="carousel_next"><img src="img/right1.png" alt=""></div>
+        </div>
+    </div>
+</div>
+<!-- 总览 -->
+<section class="overview">
+    <h1>XX度假区</h1>
+    <h2>度假区总览</h2>
+    <div class="overview_container">
+        <div class="overview_content">
+            <div class="overview_group">
+                <div class="overview_picture"><img src="img/overview.jpg"  alt="度假区总览"></div>
+                <div class="overview_description">
+                    <div class="text">
+                        <p>广州长隆旅游度假区是中国目前拥有主题公园数量极多、种类极丰富的主题景区，拥有包括长隆野生动物世界、
+                            长隆欢乐世界、长隆水上乐园、长隆国际大马戏、长隆飞鸟乐园和长隆酒店、熊猫酒店等多家主题公园和主题酒店。</p>
+                    </div>
+                    <div class="btn_wrap">
+                            <div class="btn_cell">
+                                <div class="btn">
+                                    <span>了解更多</span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 园区列表 -->
+<section class="display">
+    <div class="cols">
+        <div class="col">
+            <div class="display_container">
+                <div class="front" style="background-image: url(img/display1.jpg)">
+                    <div class="inner">
+                        <p>Diligord</p>
+                        <span>Lorem ipsum</span>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <div class="btn_wrap">
+                            <div class="btn">
+                                <span>了解更多</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="display_container">
+                <div class="front" style="background-image:url(img/display2.jpg)">
+                    <div class="inner">
+                        <p>Rocogged</p>
+                        <span>Lorem ipsum</span>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <div class="btn_wrap">
+                            <div class="btn_cell">
+                                <div class="btn">
+                                    <span>了解更多</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="display_container">
+                <div class="front" style="background-image: url(img/display3.jpg)">
+                    <div class="inner">
+                        <p>Strizzes</p>
+                        <span>Lorem ipsum</span>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <div class="btn_wrap">
+                            <div class="btn_cell">
+                                <div class="btn">
+                                    <span>了解更多</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="display_container">
+                <div class="front" style="background-image: url(img/display4.jpg)">
+                    <div class="inner">
+                        <p>Clossyo</p>
+                        <span>Lorem ipsum</span>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <div class="btn_wrap">
+                            <div class="btn_cell">
+                                <div class="btn">
+                                    <span>了解更多</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="display_container">
+                <div class="front" style="background-image: url(img/display5.jpg)">
+                    <div class="inner">
+                        <p>Rendann</p>
+                        <span>Lorem ipsum</span>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <div class="btn_wrap">
+                            <div class="btn_cell">
+                                <div class="btn">
+                                    <span>了解更多</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="display_container">
+                <div class="front" style="background-image: url(img/display6.jpg)">
+                    <div class="inner">
+                        <p>Reflupper</p>
+                        <span>Lorem ipsum</span>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <div class="btn_wrap">
+                            <div class="btn_cell">
+                                <div class="btn">
+                                    <span>了解更多</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="display_container">
+                <div class="front" style="background-image: url(img/display7.jpg)">
+                    <div class="inner">
+                        <p>Acirassi</p>
+                        <span>Lorem ipsum</span>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <div class="btn_wrap">
+                            <div class="btn_cell">
+                                <div class="btn">
+                                    <span>了解更多</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="display_container">
+                <div class="front" style="background-image: url(img/display8.jpg)">
+                    <div class="inner">
+                        <p>Sohanidd</p>
+                        <span>Lorem ipsum</span>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <div class="btn_wrap">
+                            <div class="btn_cell">
+                                <div class="btn">
+                                    <span>了解更多</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="display_container">
+                <div class="front" style="background-image: url(img/display9.jpg)">
+                    <div class="inner">
+                        <p>Sohanidd</p>
+                        <span>Lorem ipsum</span>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <div class="btn_wrap">
+                            <div class="btn_cell">
+                                <div class="btn">
+                                    <span>了解更多</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

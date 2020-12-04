@@ -1,0 +1,227 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(237, 237, 239, 0.47);
+}
+.main {
+    padding-top: 100px;
+    width: 100%;
+    height: 800px;
+    color: aqua;
+}
+a {
+    text-decoration: none;
+}
+img {
+     height: 300px ;
+     width: 100%;
+     transition: .5s;
+ }
+img:hover {
+    transform: scale(1.1);
+}
+.word {
+    border: 2px solid #5af5e9;
+    float: left;
+    height: 300px;
+    width: 47%;
+    border-radius: 20px;
+    margin: 10px 2px 10px 2%;
+    overflow: hidden;
+}
+
+.water{
+    border: 2px solid #5af5e9;
+    float: left;
+    height: 300px;
+    width: 47%;
+    border-radius: 20px;
+    margin: 10px 0 10px 1%;
+    overflow: hidden;
+}
+.up {
+    clear: both;
+}
+.left {
+    text-align: center;
+    height: 60px;
+    width: 48%;
+    float: left;
+}
+.right {
+    text-align: center;
+    height: 60px;
+    width: 48%;
+    float: left;
+}
+.bird {
+    border: 2px solid #5af5e9;
+    float: left;
+    height: 300px;
+    width: 47%;
+    border-radius: 20px;
+    margin: 10px 0 10px 1%;
+    overflow: hidden;
+}
+.animal {
+    border: 2px solid #5af5e9;
+    float: left;
+    height: 300px;
+    width: 47%;
+    border-radius: 20px;
+    margin: 10px 2px 10px 2%;
+    overflow: hidden;
+}
+.down {
+    clear: both;
+}
+/*按钮*/
+.main2 {
+    position: relative;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    margin: 45px;
+    text-decoration: none;
+    color: aqua;
+    font-size: 20px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.main2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid aqua;
+    border-left: 2px solid aqua;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.main2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid aqua;
+    border-right: 2px solid aqua;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.main2:hover::before, a:hover::after {
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+.main2:hover {
+    background-color: aqua;
+    color: #000;
+    box-shadow: 0 0 50px #21ebff;
+    transition-delay: 0.3s;
+}
+/*导航栏*/
+.hl_nav{
+    background-color: #ffffff;
+    position: fixed;
+    min-width: 1200px;
+    height: 50px;
+    width: 100%;
+}
+
+.nav_list{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0 0 0 -600px;
+    z-index: 2;
+    padding: 0;
+    list-style: none;
+    width: 1200px;
+    overflow: hidden;
+    height: 50px;
+}
+.nav_list>li{
+    padding: 0;
+    float: left;
+    margin: 0 0 0 100px;
+    width: 10%;
+    text-align: center;
+    height: 50px;
+}
+.nav_head{
+    height: 50px;
+    line-height: 50px;
+    color: aqua;
+    font-size: 18px;
+    position: relative;
+}
+.nav_head:hover{
+    color: white;
+}
+.nav_list>li>ul{
+    position: absolute;
+    width: auto;
+    height: 40px;
+    top: 50px;
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    line-height: 40px;
+    list-style: none;
+    overflow: hidden;
+    display: none;
+}
+/*文字背景颜色*/
+.nav_list>li:hover{
+    background-color: aqua;
+}
+.nav_list>li:hover>ul{
+    display: block;
+}
+
+.nav_list>li>ul>li{
+    float: left;
+}
+.nav_list>li>ul>li>a{
+    text-decoration: none;
+    display: block;
+    color: #666666;
+    padding: 0 20px;
+    height: 40px;
+}
+.nav_list>li>ul>li>a:hover{
+    background-color: aqua;
+}
+.hl_nav .nav_list:hover{
+    height: 90px;
+}
+/*底部*/
+.foot {
+    padding: 20px 45% 20px 45%;
+    height: 100px;
+    width: 100%;
+    clear: both;
+    background-color: #f5f5f6;
+}
+.Footer_img {
+    clear: both;
+    height: 100px;
+    width: 200px;
+
+}
+.copyright {
+    line-height: 40px;
+    background-color: aqua;
+    height: 40px;
+    width: 100%;
+}
+p {
+    margin: 0;
+}
