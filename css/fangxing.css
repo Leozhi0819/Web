@@ -1,0 +1,147 @@
+#b1{
+    background-color: #EDEDEF;
+    width: 100%;
+    height: 2500px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.guide {
+    position: relative;
+    z-index: 30;
+    margin-bottom: 130px;
+}
+
+.container {
+    position: relative;
+    width: 1194px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100%;
+    overflow: hidden;
+}
+
+img.left {
+    position: absolute;
+    top: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: 75px;
+    pointer-events: none;
+    left: -200px;
+}
+
+img.right {
+    position: absolute;
+    top: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: 75px;
+    pointer-events: none;
+    right: -200px;
+}
+
+.guide .logo img {
+    width: 300px;
+    margin: 0 auto 70px;
+    border: 0;
+    vertical-align: top;
+    display: block;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+}
+
+.tou{
+    width: 36%;
+    height: 60px;
+    background-color: #FFFFFF;
+    margin:  0 auto;
+}
+
+.table1{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    margin: 0 auto;
+    color: #9a5625;
+}
+
+.table1 tr th:nth-child(1){
+    background: #9a5625;
+    color: white;
+}
+a{
+    color: #9a5625;
+}
+
+.a1{
+    color: white;
+}
+
+.box {
+    background-color: #f5eee9;
+    border-radius: 20px;
+    padding: 0 35px 50px 55px;
+    counter-reset: section;
+}
+
+.box{
+    padding-top: 50px;
+}
+
+.container {
+    position: relative;
+    width: 1194px;
+    margin: 0 auto;
+}
+
+.ding{
+    text-align: center;
+    position: relative;
+    background-color:#9a5625 ;
+    width: 100px;
+    height: 36px;
+    margin: 0 auto;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+
+.a2{
+    line-height: 2em;
+    text-align: center;
+    color: white;
+}
+
+.h3, h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+.table2{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.table2 tr td{
+    height: 100px;
+}
+

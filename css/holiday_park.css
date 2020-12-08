@@ -12,6 +12,7 @@ body {
 a {
     text-decoration: none;
 }
+
 img {
      height: 300px ;
      width: 100%;
@@ -26,7 +27,7 @@ img:hover {
     height: 300px;
     width: 47%;
     border-radius: 20px;
-    margin: 10px 2px 10px 2%;
+    margin: 0.65% 0.13% 0.65% 2%;
     overflow: hidden;
 }
 
@@ -36,7 +37,7 @@ img:hover {
     height: 300px;
     width: 47%;
     border-radius: 20px;
-    margin: 10px 0 10px 1%;
+    margin: 0.65% 0 0.65% 1%;
     overflow: hidden;
 }
 .up {
@@ -60,7 +61,7 @@ img:hover {
     height: 300px;
     width: 47%;
     border-radius: 20px;
-    margin: 10px 0 10px 1%;
+    margin: 0.65% 0 0.65% 1%;
     overflow: hidden;
 }
 .animal {
@@ -69,7 +70,7 @@ img:hover {
     height: 300px;
     width: 47%;
     border-radius: 20px;
-    margin: 10px 2px 10px 2%;
+    margin: 0.65% 0.13% 0.65% 2%;
     overflow: hidden;
 }
 .down {
@@ -78,15 +79,15 @@ img:hover {
 /*按钮*/
 .main2 {
     position: relative;
-    width: 100px;
+    width: 6.5%;
     height: 60px;
     text-align: center;
     line-height: 60px;
-    margin: 45px;
+    margin: 2.9%;
     text-decoration: none;
     color: aqua;
     font-size: 20px;
-    padding: 0 20px;
+    padding: 0 1.3%;
     text-transform: uppercase;
     transition: 0.5s;
     overflow: hidden;
@@ -96,7 +97,7 @@ img:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 20px;
+    width: 1.3%;
     height: 20px;
     border-top: 2px solid aqua;
     border-left: 2px solid aqua;
@@ -108,7 +109,7 @@ img:hover {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 20px;
+    width: 1.3%;
     height: 20px;
     border-bottom: 2px solid aqua;
     border-right: 2px solid aqua;
@@ -128,6 +129,7 @@ img:hover {
 }
 /*导航栏*/
 .hl_nav{
+    z-index: 10;
     background-color: #ffffff;
     position: fixed;
     min-width: 1200px;
@@ -143,15 +145,15 @@ img:hover {
     z-index: 2;
     padding: 0;
     list-style: none;
-    width: 1200px;
+    width: 78.9%;
     overflow: hidden;
     height: 50px;
 }
 .nav_list>li{
     padding: 0;
     float: left;
-    margin: 0 0 0 100px;
-    width: 10%;
+    margin: 0 0 0 6.5%;
+    width: 11%;
     text-align: center;
     height: 50px;
 }
@@ -193,7 +195,7 @@ img:hover {
     text-decoration: none;
     display: block;
     color: #666666;
-    padding: 0 20px;
+    padding: 0 1.3%;
     height: 40px;
 }
 .nav_list>li>ul>li>a:hover{
@@ -204,7 +206,7 @@ img:hover {
 }
 /*底部*/
 .foot {
-    padding: 20px 45% 20px 45%;
+    padding: 1.3% 45% 1.3% 45%;
     height: 100px;
     width: 100%;
     clear: both;
@@ -213,7 +215,7 @@ img:hover {
 .Footer_img {
     clear: both;
     height: 100px;
-    width: 200px;
+    width: 13.1%;
 
 }
 .copyright {

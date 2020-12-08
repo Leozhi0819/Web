@@ -1,0 +1,180 @@
+.tou{
+    width: 100%;
+    background-color: #F15B47;
+    color: white;
+    padding: 5px 0;
+    margin: 0 auto;
+}
+
+.tou p{
+    line-height: 1em;
+    text-indent: 4em;
+}
+
+.denglu{
+    float: right;
+}
+
+.xinxi{
+    height: 160px;
+    padding: 15px 0;
+    background: #fff;
+    margin: 0 auto;
+    width: 66%;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.hotelenjoy{
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 20px;
+    height: 26px;
+    line-height: 26px;
+}
+
+.hotelenjoys {
+    padding: 14px 0 17px;
+}
+
+.hotelenjoy img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.hotelprice {
+    display: inline-block;
+    font-size: 16px;
+    color: #F15B47;
+    line-height: 90px;
+    margin-right: 70px;
+}
+
+.hotelprice .price {
+    font-size: 28px;
+    vertical-align: baseline;
+    line-height: 1em;
+    font-family: 'PingFangSC-Regular',"微软雅黑";
+}
+
+.hotelcode {
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    width: 72px;
+    height: 90px;
+    vertical-align: middle;
+}
+
+.hotelcodecode {
+    width: 72px;
+    height: 72px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.area{
+    width: 66%;
+    margin: 0 auto;
+}
+
+.hoteladdress {
+    margin-top: 16px;
+    font-size: 16px;
+    color: #000;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: middle;
+}
+
+.hotelphone {
+    margin-top: 18px;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.beijing{
+    background-color: #f5f5f6;
+    width: 100%;
+    height: 2200px;
+}
+
+.room{
+    margin-top: 58px;
+    width: 66%;
+    margin: 0 auto;
+}
+
+table{
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    border: 3px solid #f5f5f6;
+    margin: 0 auto;
+}
+
+table tr th{
+    margin: 0 auto;
+    color: #f15b17;
+    background: #f5f5f6;
+    line-height: 3em;
+}
+.roomtou{
+    width: 300px;
+    height: 40px;
+    background: white;
+    margin: 0 auto;
+}
+
+.roomtou h1{
+    text-align: center;
+}
+
+fieldset{
+    color: #aaaaaa;
+    border: #f5f5f6;
+}
+
+strong{
+    color: black;
+}
+
+table tr td{
+    border-left: 0px solid;
+    border-right: 0px solid;
+    border-top: 15px solid #f5f5f6;
+    border-bottom: 15px solid #f5f5f6;
+    margin: 0 auto;
+    line-height: 3em;
+}
+
+.yanse1{
+    background-color: #f5f5f6;
+}
+
+.roomp{
+    width: 100px;
+    height: 50px;
+    background-color: #f15b17;
+    color: white;
+    margin: 0 auto;
+}
+
+h4{
+    text-align: center;
+}
+
+.roomp h4 a{
+    color: white;
+}

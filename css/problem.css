@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.hl_nav{
+    background-color: #ffffff;
+    position: fixed;
+    float: left;
+    min-width: 1200px;
+    height: 50px;
+    width: 100%;
+}
+.active {
+    margin: 0 20px 0 20px;
+}
+.nav_list{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0 0 0 -760px;
+    z-index: 2;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    overflow: hidden;
+    height: 50px;
+}
+.nav_list>li{
+    padding: 0;
+    float: left;
+    margin: 0;
+    width: 25%;
+    text-align: center;
+    height: 50px;
+}
+.nav_head{
+    height: 50px;
+    line-height: 50px;
+    color: #f8b316;
+    font-size: 18px;
+    position: relative;
+}
+.nav_head:hover{
+    color: white;
+}
+.nav_list>li>ul{
+    position: absolute;
+    width: auto;
+    height: 40px;
+    top: 50px;
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    line-height: 40px;
+    list-style: none;
+    overflow: hidden;
+    display: none;
+}
+/*文字背景颜色*/
+.nav_list>li:hover{
+    background-color: #f9b416;
+}
+.nav_list>li:hover>ul{
+    display: block;
+}
+
+.nav_list>li>ul>li{
+    float: left;
+}
+.nav_list>li>ul>li>a{
+    text-decoration: none;
+    display: block;
+    color: #666666;
+    padding: 0 20px;
+    height: 40px;
+}
+.nav_list>li>ul>li>a:hover{
+    background-color: #ffffff;
+    color: #999999;
+}
+.hl_nav .nav_list:hover{
+    height: 90px;
+}
+
+.top {
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+ul li {
+    height: 30px;
+    width: 280px;
+    list-style-type: none;
+    background-color: #f3f7e8;
+    display: inline;
+    float: left;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+ul li:hover {
+    color: #f8b316;
+}
+
+ul li a {
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    color: #f8b316;
+    font-size: 18px;
+    position: relative;
+}
+
+
+/*.top {*/
+/*    width: 100%;*/
+/*    height: 300px;*/
+/*    background-color: #f8b316;*/
+/*}*/
+
+.left {
+    width: 20%;
+    height: 800px;
+    float: left;
+    /*clear: both;*/
+    background-color: #f4f8e9;
+    border-right: 2px;
+}
+
+.right {
+    width: 80%;
+    height: 800px;
+    float: right;
+    /*clear: both;*/
+    background-color: #ececee;
+
+}
+
+.left ul {
+    color: #f4f8e9;
+}
+
+.left ul li {
+    height: 120px;
+    width: 100%;
+    display: inline;
+    text-align: center;
+    line-height: 200px;
+    font-size: 1.2em;
+    color: #a8cd43;
+}
+
+.left ul li a {
+    color: #a8cd43;
+}
+
+
