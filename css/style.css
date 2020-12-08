@@ -71,8 +71,6 @@ a {
     line-height: 60px;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 700;
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
     -webkit-transition: color .3s;
     transition: color .3s;
     cursor: pointer;
@@ -378,9 +376,8 @@ a {
     display: inline-block;
     text-align: center;
     white-space: nowrap;
-    touch-action: manipulation;
     cursor: pointer;
-    user-select: none;
+
 }
 
 .btn:active, .btn:focus, .btn:hover {
@@ -809,9 +806,6 @@ a {
 }
 
 @media screen and (max-width: 40rem) {
-    .display {
-        margin: 10%;
-    }
     .col {
         width: 90%;
         margin: 0 0 2rem 0;
